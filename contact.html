@@ -1,0 +1,122 @@
+<!--This website is only a demo and all credit goes to the owner. The images are from Nike, Puma, and Adidas.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sported - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;
+    400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="images/cart.png" width="30px" height="30px">
+            </a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!--Contact-->
+    <div class="contact-page">
+        <div class="title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact"> 
+            <div class="third-col">
+                <h2>Customer Care</h2>
+                <p>Email: customercare@website.com</p>
+                <p>Chat</p>
+                <p>Hours: Mon - Sun: 9am - 7pm</p>
+            </div>
+            <div class="third-col">
+                <h2>Call Us</h2>
+                <p>Phone: +1 123-123-1234</p>
+                <p>Hours: Mon - Sun: 9am - 7pm</p>
+            </div>
+            <div class="third-col">
+                <h2>Store Locations</h2>
+                <p>Find store locations near you.</p>
+            </div>
+        </div>
+        <div class="frequent-q">
+            <h1>Frequently Asked Questions</h1>
+            <hr>
+            <p>How can I return my purchases?</p>
+            <p>How can I apply promotions and discounts to my order?</p>
+            <p>How can I create an account?</p>
+            <p>What do I do if I don't remember my password?</p>
+        </div>
+    </div>    
+<!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Our app is available on IOS and Android</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our mission is to shape the world through sports</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Rewards</li>
+                        <li>Blog</li>
+                        <li>Return Policy</li>
+                        <li>Join Our Team</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Demo Website</p>
+        </div>
+    </div>
+    <!--Javascript-->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px"
+            }
+            else {
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
